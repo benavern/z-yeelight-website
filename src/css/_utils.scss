@@ -75,11 +75,12 @@
 
 .text {
   text-align: center;
+  order: -1;
 
   @media (min-width: $breakpoint) {
     &.text-right {
       text-align: left;
-      order: 2;
+      order: 1;
     }
 
     &.text-left {
@@ -98,7 +99,6 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    // width: $breakpoint / 2;
     max-width: 90%;
     width: 70%;
     object-fit: contain;
