@@ -1,0 +1,52 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 100%;
+  background-color: $black;
+  background: radial-gradient($primary 20%, darken($primary, 20%));
+  background-attachment: fixed;
+}
+
+body {
+  font-family: "Open sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.6;
+  color: $white;
+}
+
+
+a:focus,
+button:focus,
+input:focus {
+  outline: none;
+}
+
+p {
+  margin: 0;
+  padding: 1rem 0;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0,0,0,0.8);
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 2px;
+  background: rgba($white, .5);
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: rgba($white, .2);
+  font-style: italic;
+}

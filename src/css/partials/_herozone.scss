@@ -1,0 +1,32 @@
+#herozone {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+
+  .herozone-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 40%;
+    text-align: center;
+
+    h1 {
+      font-size: 4rem;
+    }
+  }
+
+  .herozone-img {
+    position: absolute;
+    bottom: -20%;
+    height: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    img {
+      display: block;
+      height: 100%;
+      width: auto;
+    }
+  }
+}

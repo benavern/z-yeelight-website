@@ -1,0 +1,28 @@
+{
+  "name": "z-yeelight-website",
+  "version": "1.0.0",
+  "description": "Website for https://github.com/benavern/z-yeelight",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel src/html/index.njk",
+    "build": "parcel build src/html/index.njk",
+    "cleanup": "rimraf .cache/ dist/"
+  },
+  "keywords": [
+    "yeelight",
+    "desktop",
+    "bulb control",
+    "xiaomi"
+  ],
+  "author": "Benjamin Caradeuc <benjamin@caradeuc.info> (https://benjamin.caradeuc.info)",
+  "license": "MIT",
+  "devDependencies": {
+    "node-sass": "^4.13.0",
+    "nunjucks": "^3.2.0",
+    "parcel-bundler": "^1.12.4",
+    "parcel-plugin-nunjucks": "^2.2.0",
+    "rimraf": "^3.0.0"
+  },
+  "dependencies": {},
+  "repository": "https://github.com/benavern/z-yeelight-website"
+}
