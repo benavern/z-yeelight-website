@@ -3,5 +3,25 @@
 {% block main %}
   <main>
     {% include 'partials/_herozone.njk' %}
+    {% include 'partials/_discovered.njk' %}
+    {% include 'partials/_add-favorites.njk' %}
+    {% include 'partials/_favorites.njk' %}
+    {% include 'partials/_control.njk' %}
   </main>
+{% endblock %}
+
+{% block footer %}
+  <footer class="center">
+    <div class="container">
+      <span class="blue">&lt;/&gt;</span>
+      &nbsp;
+      with
+      &nbsp;
+      <span class="red">♥</span>
+      &nbsp;
+      by
+      &nbsp;
+      <a class="primary" href="https://benjamin.caradeuc.info">Benjamin Caradeuc</a>
+    </div>
+  </footer>
 {% endblock %}

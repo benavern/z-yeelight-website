@@ -1,7 +1,6 @@
 #herozone {
+  --section-bg: #{$primary};
   position: relative;
-  height: 100vh;
-  width: 100%;
   overflow: hidden;
 
   .herozone-content {
@@ -12,7 +11,37 @@
     text-align: center;
 
     h1 {
-      font-size: 4rem;
+      font-size: 2rem;
+
+      @media(min-width: $breakpoint) {
+        font-size: 3rem;
+        letter-spacing: -.05em;
+      }
+
+      @media(min-width: 2 * $breakpoint) {
+        font-size: 4rem;
+      }
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      font-style: italic;
+
+      @media(min-width: $breakpoint) {
+        font-size: 2rem;
+      }
+
+      @media(min-width: 2*$breakpoint) {
+        font-size: 3rem;
+      }
+    }
+
+    .cta {
+      margin: .5em 0;
+
+      @media(min-width: $breakpoint) {
+        font-size: 1.25rem;
+      }
     }
   }
 
@@ -20,13 +49,14 @@
     position: absolute;
     bottom: -20%;
     height: 70%;
+    width: 70%;
     left: 50%;
     transform: translateX(-50%);
 
     img {
-      display: block;
       height: 100%;
-      width: auto;
+      width: 100%;
+      object-fit: contain;
     }
   }
 }

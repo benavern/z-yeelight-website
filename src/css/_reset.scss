@@ -9,8 +9,6 @@
 html {
   font-size: 100%;
   background-color: $black;
-  background: radial-gradient($primary 20%, darken($primary, 20%));
-  background-attachment: fixed;
 }
 
 body {
@@ -20,16 +18,49 @@ body {
   color: $white;
 }
 
-
 a:focus,
 button:focus,
 input:focus {
   outline: none;
 }
 
+h1 {
+  font-size: 2rem;
+
+  @media(min-width: $breakpoint) {
+    font-size: 3rem;
+  }
+
+  @media(min-width: 2 * $breakpoint) {
+    font-size: 4rem;
+  }
+}
+
+h2 {
+  font-size: 1.5rem;
+
+  @media(min-width: $breakpoint) {
+    font-size: 2rem;
+  }
+
+  @media(min-width: 2*$breakpoint) {
+    font-size: 3rem;
+  }
+}
+
+h3 {
+  font-size: 1.5rem;
+
+  @media(min-width: 2*$breakpoint) {
+    font-size: 2.5rem;
+  }
+}
+
+h1,
+h2,
+h3,
 p {
-  margin: 0;
-  padding: 1rem 0;
+  margin: .5em 0;
 }
 
 ::-webkit-scrollbar {
