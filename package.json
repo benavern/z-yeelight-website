@@ -17,7 +17,7 @@
   "author": "Benjamin Caradeuc <benjamin@caradeuc.info> (https://benjamin.caradeuc.info)",
   "license": "MIT",
   "devDependencies": {
-    "node-sass": "^4.13.0",
+    "node-sass": "^4.13.1",
     "nunjucks": "^3.2.0",
     "parcel-bundler": "^1.12.4",
     "parcel-plugin-nunjucks": "^2.2.0",
